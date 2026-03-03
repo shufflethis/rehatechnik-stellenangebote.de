@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thomas Sander",
+  "url": "https://rehatechnik-stellenangebote.de/autor/thomas-sander",
+  "jobTitle": "Gruender & Geschaeftsfuehrer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "rehatechnik-stellenangebote.de",
+    "url": "https://rehatechnik-stellenangebote.de"
+  },
+  "description": "Gruender von rehatechnik-stellenangebote.de - spezialisiertes Jobportal fuer Rehatechnik-Stellenangebote.",
+  "knowsAbout": [
+    "Rehatechnik",
+    "Personalwesen",
+    "Recruiting",
+    "Jobportale"
+  ]
+}

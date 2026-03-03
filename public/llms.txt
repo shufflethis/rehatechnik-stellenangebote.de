@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# rehatechnik-stellenangebote.de - Rehatechnik Stellenangebote
+
+> rehatechnik-stellenangebote.de ist ein spezialisiertes Jobportal fuer Rehatechnik-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Rehatechnik
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://rehatechnik-stellenangebote.de
+- Arbeitgeber-Kontakt: https://rehatechnik-stellenangebote.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://rehatechnik-stellenangebote.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Rehatechnik-Stellenangebote
+- Karriere-Ratgeber fuer Rehatechnik
+- Gehaltsvergleiche und Brancheninformationen
