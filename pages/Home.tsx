@@ -15,6 +15,60 @@ import { Search, MapPin, Filter, Settings, Truck } from 'lucide-react';
 const SAMPLE_JOBS: JobListing[] = [
   {
     id: '1',
+    title: 'Wagenmeister/in (m/w/d) für den mobilen Dienst als Vorarbeiter/in (m/w/d)',
+    company: 'NORDIC RAIL SERVICE GMBH',
+    location: 'Lübeck',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '2',
+    title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
+    company: 'HUK-COBURG Versicherungsgruppe',
+    location: 'Weißenburg i. Bayern',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '3',
+    title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
+    company: 'HUK-COBURG Versicherungsgruppe',
+    location: 'Nürnberg',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '4',
+    title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
+    company: 'Sikla GmbH',
+    location: 'Nürnberg',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '5',
+    title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
+    company: 'Sikla GmbH',
+    location: 'München',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-08'
+  },
+  {
+    id: '6',
+    title: 'Servicefahrer / Auslieferungsfahrer (m/w/d) für Rehatechnik',
+    company: 'Zimmermann Sanitäts- und Orthopädiehaus GmbH',
+    location: 'Straubing',
+    type: 'Vollzeit',
+    tags: ['Servicefahrer/in'],
+    postedAt: '2026-03-04'
+  },
+  {
+    id: '7',
     title: 'Teilbereichsleitung (m/w/d) Innendienst Rehatechnik',
     company: 'Zimmermann Sanitäts- und Orthopädiehaus GmbH',
     location: 'Straubing',
@@ -23,7 +77,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '2',
+    id: '8',
     title: 'Intensivpflegekraft - Beratung / Hausbesuche / Rehatechnik (m/w/d)',
     company: 'Workwise GmbH',
     location: 'Dortmund',
@@ -32,7 +86,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '3',
+    id: '9',
     title: 'Außendienstmitarbeiter (m/w/d) –– Vollzeit– Rehatechnik',
     company: 'SC Sanitätshaus Carstens GmbH',
     location: 'Stuttgart',
@@ -41,7 +95,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '4',
+    id: '10',
     title: 'Sachbearbeiter Innendienst Rehatechnik (m/w/d)',
     company: 'LICURA-Gruppe',
     location: 'Hessisch Lichtenau',
@@ -50,7 +104,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '5',
+    id: '11',
     title: 'Servicetechniker*in/Fahrer-in für Rehatechnik (m/w/d)',
     company: 'Moises Markus',
     location: 'Ratingen',
@@ -59,7 +113,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '6',
+    id: '12',
     title: 'Servicetechniker*in/Fahrer-in für Rehatechnik (m/w/d)',
     company: 'Moises Markus',
     location: 'Erlangen',
@@ -68,7 +122,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '7',
+    id: '13',
     title: 'Außendienstberater (m/w/d) Rehatechnik, LUT - LiBo 55',
     company: 'Luttermann GmbH',
     location: 'Essen, Ruhr',
@@ -77,7 +131,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-25'
   },
   {
-    id: '8',
+    id: '14',
     title: 'Fahrer/in für Orthopädie-, Rehatechnik gesucht',
     company: 'Orthopädie-Technik Kächele GmbH',
     location: 'Stuttgart',
@@ -86,7 +140,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-23'
   },
   {
-    id: '9',
+    id: '15',
     title: 'Rehatechnik-Berater/-in (m/w/d) in Böblingen',
     company: 'Schaible GmbH',
     location: 'Böblingen',
@@ -95,7 +149,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-19'
   },
   {
-    id: '10',
+    id: '16',
     title: 'Rehatechnik-Berater/-in (m/w/d) in Nagold',
     company: 'Schaible GmbH',
     location: 'Nagold',
@@ -104,7 +158,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-19'
   },
   {
-    id: '11',
+    id: '17',
     title: 'Monteur:in (m/w/d) Rehatechnik Außendienst',
     company: 'Mitschke Health + Life GmbH',
     location: 'Gütersloh',
@@ -113,7 +167,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-18'
   },
   {
-    id: '12',
+    id: '18',
     title: 'Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik',
     company: 'Lambert Sanitätshaus GmbH',
     location: 'Salzburg',
@@ -122,7 +176,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-17'
   },
   {
-    id: '13',
+    id: '19',
     title: 'Disponent Rehatechnik (m/w/d)',
     company: 'Sanitätshaus Reutter Thomas Gockenbach',
     location: 'Calw',
@@ -131,7 +185,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-16'
   },
   {
-    id: '14',
+    id: '20',
     title: 'Mitarbeiter Innendienst Rehatechnik (m/w/d)',
     company: 'Reha-aktiv GmbH Chemnitz',
     location: 'Chemnitz, Sachsen',
@@ -140,7 +194,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-13'
   },
   {
-    id: '15',
+    id: '21',
     title: 'Verwaltungsmitarbeiter /-in m/w/d - Rehatechnik',
     company: 'PerZukunft Arbeitsvermittlung GmbH&Co.KG',
     location: 'Berlin',
@@ -149,7 +203,16 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-12'
   },
   {
-    id: '16',
+    id: '22',
+    title: 'Technische Mitarbeiter (m/w/d) im Innendienst für Rehatechnik',
+    company: 'Daniel Landschulz pro-biz',
+    location: 'Leipzig',
+    type: 'Vollzeit',
+    tags: ['Orthopädiemechaniker/in und Bandagist/in'],
+    postedAt: '2026-02-09'
+  },
+  {
+    id: '23',
     title: 'Mitarbeiter in Rehatechnik',
     company: 'Elbe-Orthopädie GmbH',
     location: 'Hemmoor',
@@ -158,7 +221,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-02'
   },
   {
-    id: '17',
+    id: '24',
     title: 'Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik',
     company: 'Bandagist Heindl GmbH',
     location: 'Linz',
@@ -167,76 +230,13 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-01-27'
   },
   {
-    id: '18',
+    id: '25',
     title: 'Tourenplaner*in (m/w/d) für die Rehatechnik',
     company: 'Orthopädie- und Reha-Technik Wolf GmbH & Co.KG Das Sanitätshaus',
     location: 'Leipzig',
     type: 'Vollzeit',
     tags: ['Kaufmann/-frau - Gesundheitswesen'],
     postedAt: '2026-01-22'
-  },
-  {
-    id: '19',
-    title: 'Montiererhelfer Rehatechnik (m/w/d)',
-    company: 'S&B Personalservice GmbH',
-    location: 'Seddiner See',
-    type: 'Vollzeit',
-    tags: ['Montagemechaniker/in, Anlagenmonteur/in'],
-    postedAt: '2026-01-18'
-  },
-  {
-    id: '20',
-    title: 'Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik',
-    company: 'Kerkoc GmbH',
-    location: 'Brunn am Gebirge',
-    type: 'Vollzeit',
-    tags: ['Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik'],
-    postedAt: '2025-12-16'
-  },
-  {
-    id: '21',
-    title: 'Außendienstmitarbeiter (m/w/d) Sitzsonderbau/Rehatechnik',
-    company: 'Stolle Sanitätshaus GmbH & Co. KG',
-    location: 'Schwerin, Mecklenburg',
-    type: 'Vollzeit',
-    tags: ['Rehabilitationsmitteltechniker/in'],
-    postedAt: '2025-12-15'
-  },
-  {
-    id: '22',
-    title: 'Außendienstmitarbeiter (m/w/d) – Medizinprodukte & Rehatechnik',
-    company: 'Sanitätshaus Fuchs & Möller GmbH',
-    location: 'Mannheim',
-    type: 'Vollzeit',
-    tags: ['Orthopädietechnik-Mechaniker/in'],
-    postedAt: '2025-11-24'
-  },
-  {
-    id: '23',
-    title: 'Bürofachkraft/ Berater/in im Bereich der Rehatechnik (m/w/d)',
-    company: 'Biedermann Orthopädie- Technik GmbH',
-    location: 'Rottweil',
-    type: 'Vollzeit',
-    tags: ['Fachmann/-frau - Rehatechnik/Sanitätshauswaren'],
-    postedAt: '2025-11-05'
-  },
-  {
-    id: '24',
-    title: 'Ausbildung zum Orthopädietechnik-Mechaniker (m/w/d), Schwerpunkt RehaTechnik',
-    company: 'Sanitätshaus Lang GmbH',
-    location: 'Dinslaken',
-    type: 'Vollzeit',
-    tags: ['Orthopädietechnik-Mechaniker/in'],
-    postedAt: '2025-10-24'
-  },
-  {
-    id: '25',
-    title: 'Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik',
-    company: 'Bandagist Heindl GmbH',
-    location: 'Innsbruck',
-    type: 'Vollzeit',
-    tags: ['Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik'],
-    postedAt: '2025-10-20'
   }
 ];
 
