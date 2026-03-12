@@ -8,9 +8,10 @@ import JobCard from '../components/JobCard';
 import ApplicationModal from '../components/ApplicationModal';
 import ContentSection from '../components/ContentSection';
 import Footer from '../components/Footer';
+import GeoStaedte from '../components/geo/GeoStaedte';
 import { JobListing } from '../types';
 import { searchSection, employerSection, applicantSection, aboutSection } from '../data/content';
-import { Search, MapPin, Filter, Settings, Truck } from 'lucide-react';
+import { Search, MapPin, Filter, Settings, Truck, ChevronDown } from 'lucide-react';
 
 const SAMPLE_JOBS: JobListing[] = [
   {
@@ -321,6 +322,86 @@ const Home: React.FC = () => {
           <ContentSection id="career" content={applicantSection} />
           <ContentSection id="about" content={aboutSection} className="bg-slate-50/50" />
         </div>
+
+        {/* Geo SEO - Staedte */}
+        <GeoStaedte />
+
+        {/* FAQ & Karriere-Info Section */}
+        <section className="py-20 bg-slate-50 border-t border-slate-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <h2 className="text-3xl md:text-4xl font-sans font-extrabold text-slate-900 mb-4">
+                Haeufig gestellte Fragen zur Karriere in der Rehatechnik
+              </h2>
+              <p className="text-slate-500 max-w-2xl mx-auto font-medium">
+                Alles Wichtige rund um Berufe, Einstieg und Karrierechancen in der Rehabilitationstechnik.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {[
+                {
+                  frage: 'Welche Berufe gibt es in der Rehatechnik?',
+                  antwort: 'Die Rehatechnik bietet vielfaeltige Berufsbilder: Orthopaedie-Mechaniker/in, Rehatechnik-Fachberater/in, Servicetechniker/in, Aussendienst-Berater/in, Disponent/in, Tourenplaner/in, Werkstattleiter/in sowie Kaufleute im Gesundheitswesen. Auch Pflegefachkraefte mit Beratungsschwerpunkt finden hier Karrierechancen.',
+                },
+                {
+                  frage: 'Welche Qualifikationen brauche ich fuer einen Job in der Rehatechnik?',
+                  antwort: 'Je nach Position sind unterschiedliche Qualifikationen gefragt. Fuer technische Rollen ist eine Ausbildung als Orthopaedie-Mechaniker/in oder Rehabilitationsmitteltechniker/in ideal. Fuer Beratung und Vertrieb sind kaufmaennische Ausbildungen im Gesundheitswesen oder Erfahrung in der Hilfsmittelbranche hilfreich. Quereinsteiger mit handwerklichem Geschick haben ebenfalls gute Chancen.',
+                },
+                {
+                  frage: 'Wie sind die Gehaltsaussichten in der Rehatechnik?',
+                  antwort: 'Die Gehaelter in der Rehatechnik variieren je nach Position, Region und Erfahrung. Einstiegsgehaelter fuer Fachkraefte liegen typischerweise zwischen 30.000 und 38.000 Euro brutto pro Jahr. Mit Berufserfahrung und Spezialisierung sind 40.000 bis 55.000 Euro moeglich. Fuehrungspositionen und spezialisierte Aussendienstrollen koennen noch hoeher verguetet werden.',
+                },
+                {
+                  frage: 'Was macht ein/e Rehatechnik-Berater/in?',
+                  antwort: 'Rehatechnik-Berater/innen beraten Patienten, Angehoerige und Pflegeeinrichtungen zur optimalen Hilfsmittelversorgung. Sie fuehren Hausbesuche durch, ermitteln den individuellen Bedarf, passen Rollstuehle, Pflegebetten und weitere Hilfsmittel an und koordinieren die Versorgung mit Kostentraegern und Aerzten.',
+                },
+                {
+                  frage: 'Welche Weiterbildungsmoeglichkeiten gibt es?',
+                  antwort: 'In der Rehatechnik gibt es zahlreiche Weiterbildungsmoeglichkeiten: Meisterpruefung in der Orthopaedie-Technik, Spezialisierung auf Kinder-Reha oder Sonderbau, Fortbildungen im Bereich 3D-Druck und digitale Fertigung, Schulungen zu neuen Hilfsmitteln sowie betriebswirtschaftliche Weiterbildungen fuer Fuehrungspositionen.',
+                },
+                {
+                  frage: 'Ist rehatechnik-stellenangebote.de kostenlos fuer Bewerber?',
+                  antwort: 'Ja, die Nutzung von rehatechnik-stellenangebote.de ist fuer Bewerber vollstaendig kostenlos. Sie koennen alle Stellenangebote einsehen, sich ueber Unternehmen informieren und sich direkt auf passende Positionen bewerben - ohne Gebuehren oder versteckte Kosten.',
+                },
+                {
+                  frage: 'In welchen Regionen gibt es die meisten Rehatechnik-Jobs?',
+                  antwort: 'Rehatechnik-Stellen finden sich deutschlandweit, besonders konzentriert in Grossstaedten und Ballungsraeumen wie Berlin, Hamburg, Muenchen, Koeln, Stuttgart, Frankfurt am Main und dem Ruhrgebiet. Aber auch in mittelgrossen Staedten und laendlichen Regionen gibt es attraktive Positionen bei lokalen Sanitaetshaeusern und Reha-Fachbetrieben.',
+                },
+                {
+                  frage: 'Wie bewerbe ich mich auf eine Stelle?',
+                  antwort: 'Klicken Sie einfach auf "Job ansehen" bei der gewuenschten Stelle und nutzen Sie unser Bewerbungsformular fuer eine Direkt-Bewerbung. Laden Sie Ihren Lebenslauf als PDF hoch und geben Sie Ihre fachlichen Schwerpunkte an. Das Unternehmen erhaelt Ihre Unterlagen und meldet sich zeitnah bei Ihnen.',
+                },
+              ].map((item, index) => (
+                <details key={index} className="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:border-reha-300 transition-colors">
+                  <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-slate-900 text-lg list-none">
+                    <span className="pr-4">{item.frage}</span>
+                    <ChevronDown size={20} className="text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0" />
+                  </summary>
+                  <div className="px-6 pb-6 text-slate-600 leading-relaxed font-medium">
+                    {item.antwort}
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            {/* Karriere-Info */}
+            <div className="mt-16 bg-white rounded-3xl border border-slate-200 p-8 md:p-12">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Karriere in der Rehatechnik - Ihr Einstieg</h3>
+              <div className="space-y-4 text-slate-600 leading-relaxed font-medium">
+                <p>
+                  Die Rehatechnik-Branche waechst stetig. Durch den demografischen Wandel und steigende Ansprueche an individuelle Hilfsmittelversorgung werden qualifizierte Fachkraefte dringend gesucht. Ob Sie als erfahrener Orthopaedie-Mechaniker eine neue Herausforderung suchen oder als Quereinsteiger in die Branche wechseln moechten - die Moeglichkeiten sind vielfaeltig.
+                </p>
+                <p>
+                  Sanitaetshaeuser, Reha-Zentren und Medizintechnik-Unternehmen in ganz Deutschland bieten sichere Arbeitsplaetze mit Sinn. In der Rehatechnik arbeiten Sie direkt am Menschen und tragen taeglich dazu bei, die Lebensqualitaet und Mobilitaet von Patienten zu verbessern.
+                </p>
+                <p>
+                  rehatechnik-stellenangebote.de ist Ihr spezialisiertes Jobportal fuer die gesamte Bandbreite der Rehatechnik-Berufe. Wir verbinden Fachkraefte mit den besten Arbeitgebern der Branche - kostenfrei, gezielt und uebersichtlich.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />

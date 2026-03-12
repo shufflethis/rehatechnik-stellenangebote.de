@@ -1,19 +1,38 @@
 # HR-UPDATER: v1.0
 # rehatechnik-stellenangebote.de - Rehatechnik Stellenangebote
 
-> rehatechnik-stellenangebote.de ist ein spezialisiertes Jobportal fuer Rehatechnik-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> rehatechnik-stellenangebote.de ist ein spezialisiertes Jobportal fuer Rehatechnik-Stellenangebote in Deutschland, Oesterreich und der Schweiz. Betrieben von der Social Media Venture GmbH.
 
 ## Ueber uns
-- Spezialisiertes Jobportal fuer Rehatechnik
+- Spezialisiertes Jobportal fuer Rehatechnik und Rehabilitationstechnik
 - Kostenlose Stellensuche fuer Bewerber
 - Gezielte Reichweite fuer Arbeitgeber
+- Stellenangebote fuer Orthopaedie-Mechaniker, Reha-Fachberater, Servicetechniker, Aussendienstmitarbeiter und weitere Fachkraefte
+
+## Betreiber
+- Firma: Social Media Venture GmbH
+- Geschaeftsfuehrer: Thomas Sander
+- Adresse: Schliemannstrasse 23, 10437 Berlin, Deutschland
+- Telefon: +49 30 959 988 700
+- E-Mail: info@socialmediaventure.com
+- Website: https://rehatechnik-stellenangebote.de
 
 ## Kontakt
 - Website: https://rehatechnik-stellenangebote.de
-- Arbeitgeber-Kontakt: https://rehatechnik-stellenangebote.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://rehatechnik-stellenangebote.de/kontakt-bewerber
+- Arbeitgeber-Kontakt: https://rehatechnik-stellenangebote.de/#/kontakt
+- Bewerber-Kontakt: https://rehatechnik-stellenangebote.de/#/kontakt
 
 ## Inhalte
-- Aktuelle Rehatechnik-Stellenangebote
-- Karriere-Ratgeber fuer Rehatechnik
+- Aktuelle Rehatechnik-Stellenangebote in Deutschland, Oesterreich und der Schweiz
+- Karriere-Ratgeber fuer Rehatechnik-Fachkraefte
 - Gehaltsvergleiche und Brancheninformationen
+- FAQ zu Berufen in der Rehatechnik
+- Stellenangebote nach Standort (Berlin, Hamburg, Muenchen, Koeln, Stuttgart, Frankfurt, u.v.m.)
+
+## Fachbereiche
+- Orthopaedie-Technik
+- Kinder-Rehatechnik
+- Homecare & Pflege
+- Sonderbau & Werkstatt
+- Reha-Fachberatung
+- Hilfsmittelversorgung

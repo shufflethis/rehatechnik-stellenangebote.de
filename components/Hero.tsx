@@ -4,12 +4,12 @@ import { ArrowRight, Settings, Truck, HeartHandshake, CheckCircle } from 'lucide
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#fdfdfe]">
+    <div className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#fdfdfe]">
       {/* Soft Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-reha-50/50 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-care-500/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 md:pt-32 md:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           <div className="text-left space-y-8">
