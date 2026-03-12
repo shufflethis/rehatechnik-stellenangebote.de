@@ -14,11 +14,15 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const navLinks = [
-    { name: 'Stellenmarkt', icon: Search, href: '#jobs' },
-    { name: 'Sanitätshäuser', icon: ShieldCheck, href: '#employer' },
-    { name: 'Fachbereiche', icon: Settings, href: '#career' },
-    { name: 'Über uns', icon: Briefcase, href: '#about' },
+    { name: 'Stellenmarkt', icon: Search, targetId: 'jobs' },
+    { name: 'Sanitätshäuser', icon: ShieldCheck, targetId: 'employer' },
+    { name: 'Fachbereiche', icon: Settings, targetId: 'career' },
+    { name: 'Über uns', icon: Briefcase, targetId: 'about' },
   ];
 
   return (
@@ -42,14 +46,14 @@ const Navbar: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.name}
-                href={link.href}
+                onClick={() => scrollTo(link.targetId)}
                 className="group relative text-sm font-bold text-slate-600 hover:text-reha-600 transition-colors"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-reha-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </button>
             ))}
             <button className="bg-slate-900 hover:bg-reha-700 text-white px-6 py-2.5 rounded-xl font-bold transition-all duration-300 text-sm flex items-center gap-2 shadow-lg shadow-slate-200">
               Anmelden
@@ -73,15 +77,14 @@ const Navbar: React.FC = () => {
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl animate-fade-in">
           <div className="px-4 pt-2 pb-6 space-y-2">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-3 py-4 rounded-xl text-base font-bold text-slate-700 hover:text-reha-600 hover:bg-reha-50 transition-all flex items-center space-x-4"
+                onClick={() => { setIsMobileMenuOpen(false); scrollTo(link.targetId); }}
+                className="block w-full text-left px-3 py-4 rounded-xl text-base font-bold text-slate-700 hover:text-reha-600 hover:bg-reha-50 transition-all flex items-center space-x-4"
               >
                 <link.icon size={20} className="text-reha-600" />
                 <span>{link.name}</span>
-              </a>
+              </button>
             ))}
           </div>
         </div>
