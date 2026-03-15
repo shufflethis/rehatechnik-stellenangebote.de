@@ -16,6 +16,60 @@ import { Search, MapPin, Filter, Settings, Truck, ChevronDown } from 'lucide-rea
 const SAMPLE_JOBS: JobListing[] = [
   {
     id: '1',
+    title: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
+    company: 'Medisca GmbH',
+    location: 'Kabelsketal',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '2',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Potsdam',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '3',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '4',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Hannover',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '5',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Isernhagen',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '6',
+    title: 'Haustechniker/in (m/w/d) für Bestandsimmobilien mit großer Dienstwohnung',
+    company: 'Neuerburg GrundstücksgemeinschaftSofort-Bewerbung',
+    location: 'Köln',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '7',
     title: 'Wagenmeister/in (m/w/d) für den mobilen Dienst als Vorarbeiter/in (m/w/d)',
     company: 'NORDIC RAIL SERVICE GMBH',
     location: 'Lübeck',
@@ -24,7 +78,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '2',
+    id: '8',
     title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
     company: 'HUK-COBURG Versicherungsgruppe',
     location: 'Weißenburg i. Bayern',
@@ -33,7 +87,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '3',
+    id: '9',
     title: 'Versicherungs- und Finanzexperte im angestellten Außendienst im Raum Weißenburg/Gunzenhausen (w/m/d)',
     company: 'HUK-COBURG Versicherungsgruppe',
     location: 'Nürnberg',
@@ -42,7 +96,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '4',
+    id: '10',
     title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
     company: 'Sikla GmbH',
     location: 'Nürnberg',
@@ -51,7 +105,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '5',
+    id: '11',
     title: 'Key Account Manager (m/w/d) - Gebiet Großraum Nürnberg - München',
     company: 'Sikla GmbH',
     location: 'München',
@@ -60,7 +114,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-08'
   },
   {
-    id: '6',
+    id: '12',
     title: 'Servicefahrer / Auslieferungsfahrer (m/w/d) für Rehatechnik',
     company: 'Zimmermann Sanitäts- und Orthopädiehaus GmbH',
     location: 'Straubing',
@@ -69,7 +123,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '7',
+    id: '13',
     title: 'Teilbereichsleitung (m/w/d) Innendienst Rehatechnik',
     company: 'Zimmermann Sanitäts- und Orthopädiehaus GmbH',
     location: 'Straubing',
@@ -78,7 +132,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '8',
+    id: '14',
     title: 'Intensivpflegekraft - Beratung / Hausbesuche / Rehatechnik (m/w/d)',
     company: 'Workwise GmbH',
     location: 'Dortmund',
@@ -87,7 +141,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '9',
+    id: '15',
     title: 'Außendienstmitarbeiter (m/w/d) –– Vollzeit– Rehatechnik',
     company: 'SC Sanitätshaus Carstens GmbH',
     location: 'Stuttgart',
@@ -96,7 +150,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '10',
+    id: '16',
     title: 'Sachbearbeiter Innendienst Rehatechnik (m/w/d)',
     company: 'LICURA-Gruppe',
     location: 'Hessisch Lichtenau',
@@ -105,7 +159,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '11',
+    id: '17',
     title: 'Servicetechniker*in/Fahrer-in für Rehatechnik (m/w/d)',
     company: 'Moises Markus',
     location: 'Ratingen',
@@ -114,7 +168,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '12',
+    id: '18',
     title: 'Servicetechniker*in/Fahrer-in für Rehatechnik (m/w/d)',
     company: 'Moises Markus',
     location: 'Erlangen',
@@ -123,7 +177,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '13',
+    id: '19',
     title: 'Außendienstberater (m/w/d) Rehatechnik, LUT - LiBo 55',
     company: 'Luttermann GmbH',
     location: 'Essen, Ruhr',
@@ -132,7 +186,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-25'
   },
   {
-    id: '14',
+    id: '20',
     title: 'Fahrer/in für Orthopädie-, Rehatechnik gesucht',
     company: 'Orthopädie-Technik Kächele GmbH',
     location: 'Stuttgart',
@@ -141,7 +195,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-23'
   },
   {
-    id: '15',
+    id: '21',
     title: 'Rehatechnik-Berater/-in (m/w/d) in Böblingen',
     company: 'Schaible GmbH',
     location: 'Böblingen',
@@ -150,7 +204,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-19'
   },
   {
-    id: '16',
+    id: '22',
     title: 'Rehatechnik-Berater/-in (m/w/d) in Nagold',
     company: 'Schaible GmbH',
     location: 'Nagold',
@@ -159,7 +213,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-19'
   },
   {
-    id: '17',
+    id: '23',
     title: 'Monteur:in (m/w/d) Rehatechnik Außendienst',
     company: 'Mitschke Health + Life GmbH',
     location: 'Gütersloh',
@@ -168,7 +222,7 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-18'
   },
   {
-    id: '18',
+    id: '24',
     title: 'Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik',
     company: 'Lambert Sanitätshaus GmbH',
     location: 'Salzburg',
@@ -177,67 +231,13 @@ const SAMPLE_JOBS: JobListing[] = [
     postedAt: '2026-02-17'
   },
   {
-    id: '19',
+    id: '25',
     title: 'Disponent Rehatechnik (m/w/d)',
     company: 'Sanitätshaus Reutter Thomas Gockenbach',
     location: 'Calw',
     type: 'Vollzeit',
     tags: ['Fachmann/-frau - Rehatechnik/Sanitätshauswaren'],
     postedAt: '2026-02-16'
-  },
-  {
-    id: '20',
-    title: 'Mitarbeiter Innendienst Rehatechnik (m/w/d)',
-    company: 'Reha-aktiv GmbH Chemnitz',
-    location: 'Chemnitz, Sachsen',
-    type: 'Vollzeit',
-    tags: ['Kaufmann/-frau - Büromanagement'],
-    postedAt: '2026-02-13'
-  },
-  {
-    id: '21',
-    title: 'Verwaltungsmitarbeiter /-in m/w/d - Rehatechnik',
-    company: 'PerZukunft Arbeitsvermittlung GmbH&Co.KG',
-    location: 'Berlin',
-    type: 'Vollzeit',
-    tags: ['Kaufmann/-frau - Gesundheitswesen'],
-    postedAt: '2026-02-12'
-  },
-  {
-    id: '22',
-    title: 'Technische Mitarbeiter (m/w/d) im Innendienst für Rehatechnik',
-    company: 'Daniel Landschulz pro-biz',
-    location: 'Leipzig',
-    type: 'Vollzeit',
-    tags: ['Orthopädiemechaniker/in und Bandagist/in'],
-    postedAt: '2026-02-09'
-  },
-  {
-    id: '23',
-    title: 'Mitarbeiter in Rehatechnik',
-    company: 'Elbe-Orthopädie GmbH',
-    location: 'Hemmoor',
-    type: 'Vollzeit',
-    tags: ['Rehabilitationsmitteltechniker/in'],
-    postedAt: '2026-02-02'
-  },
-  {
-    id: '24',
-    title: 'Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik',
-    company: 'Bandagist Heindl GmbH',
-    location: 'Linz',
-    type: 'Vollzeit',
-    tags: ['Orthopädietechnik-Mechaniker/in - Individuelle Rehatechnik'],
-    postedAt: '2026-01-27'
-  },
-  {
-    id: '25',
-    title: 'Tourenplaner*in (m/w/d) für die Rehatechnik',
-    company: 'Orthopädie- und Reha-Technik Wolf GmbH & Co.KG Das Sanitätshaus',
-    location: 'Leipzig',
-    type: 'Vollzeit',
-    tags: ['Kaufmann/-frau - Gesundheitswesen'],
-    postedAt: '2026-01-22'
   }
 ];
 
